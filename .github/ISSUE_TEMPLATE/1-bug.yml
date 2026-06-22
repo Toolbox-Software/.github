@@ -1,0 +1,77 @@
+name: 🐞 Bug
+description: Einen Fehler in einem unserer Tools melden – mit Reproschritten und Kontext.
+title: "[Bug]: "
+type: Bug
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke fürs Melden! Bitte fülle die Pflichtfelder aus, damit wir den Fehler schnell nachvollziehen können.
+        Tipp: Screenshots kannst du direkt in die Textfelder einfügen (Strg+V).
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Tatsächliches Verhalten
+      description: Was passiert? Beschreibe das Problem so konkret wie möglich. Screenshots/Logs hier direkt per Strg+V einfügen.
+      placeholder: Beim Klick auf „Speichern" erscheint eine Fehlermeldung „…" und der Datensatz wird nicht gespeichert.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was hätte stattdessen passieren sollen?
+      placeholder: Der Datensatz wird gespeichert und eine Bestätigung erscheint.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Schritte zur Reproduktion
+      description: Wie kommt man zum Fehler? Bitte nummeriert und so vollständig wie möglich.
+      value: |
+        1. 
+        2. 
+        3. 
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Umgebung / Version
+      description: Wo ist der Fehler aufgetreten? (z. B. Stage, Server, Tool-Version, Build-Nummer)
+      placeholder: z. B. Live-System, Tool-Version 2.4.1
+    validations:
+      required: false
+
+  - type: input
+    id: db-backup
+    attributes:
+      label: Speicherort DB-Backup
+      description: Falls ein passendes Datenbank-Backup existiert, hier den Pfad/Ablageort angeben.
+      placeholder: z. B. \\server\backups\tool\2026-06-22\
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Weiterer Kontext (optional)
+      description: Alles, was bei der Eingrenzung hilft – betroffene Nutzer, Häufigkeit, seit wann, verwandte Tickets.
+    validations:
+      required: false
+
+  - type: upload
+    id: file-upload
+    attributes:
+      label: Anhänge (Dateien)
+      description: |
+        Für echte Dateien (z. B. ein DB-Backup als .zip, Log-Dateien): hier per Drag&Drop ablegen oder zum Auswählen klicken.
+        Für Screenshots reicht das Einfügen oben im Feld „Tatsächliches Verhalten".
+    validations:
+      required: false

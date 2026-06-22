@@ -1,0 +1,54 @@
+name: ✨ Feature
+description: Eine neue Funktion oder Verbesserung als geplante Team-Aufgabe beschreiben.
+title: "[Feature]: "
+type: Feature
+labels: ["triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Beschreibe das Feature aus Nutzersicht. Die Akzeptanzkriterien müssen noch nicht final sein – sie werden im Refinement gemeinsam verfeinert.
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: Wer möchte was und warum? Bitte im Format „Als <Rolle> möchte ich <Ziel>, um <Nutzen>".
+      placeholder: Als Turnierleiter möchte ich Spielpläne als PDF exportieren, um sie offline aushängen zu können.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Akzeptanzkriterien
+      description: Woran erkennen wir, dass das Feature fertig ist? (Wird im Refinement verfeinert – grobe Stichpunkte genügen zum Start.)
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: false
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Nicht-Ziele / Out of Scope
+      description: Was gehört bewusst NICHT zu diesem Feature? Hilft, Scope-Creep zu vermeiden.
+    validations:
+      required: false
+
+  - type: textarea
+    id: technical-notes
+    attributes:
+      label: Technische Hinweise / Abhängigkeiten
+      description: Betroffene Komponenten, Abhängigkeiten zu anderen Issues, technische Randbedingungen. (Optional, oft erst im Refinement.)
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Weiterer Kontext (optional)
+      description: Mockups, Screenshots, Beispiele, verwandte Tickets. Bilder direkt per Strg+V einfügen.
+    validations:
+      required: false

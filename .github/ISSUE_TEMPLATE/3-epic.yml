@@ -1,0 +1,58 @@
+name: 🎯 Epic
+description: Ein größeres Roadmap-Thema beschreiben (für PO & Geschäftsführung). Wird später in Features/Bugs zerlegt.
+title: "[Epic]: "
+type: Epic
+labels: ["roadmap"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ein Epic beschreibt ein großes Thema auf Roadmap-Ebene. Lösung und Umfang dürfen hier bewusst grob bleiben – die Details entstehen später in den abgeleiteten Features.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Zu lösendes Problem
+      description: Welches Problem oder Bedürfnis steht dahinter? Warum ist das wichtig?
+      placeholder: Vereine müssen Spielpläne aktuell manuell aushängen, was fehleranfällig und zeitaufwändig ist.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: origin
+    attributes:
+      label: Ursprung der Anfrage
+      description: Woher kommt dieser Bedarf?
+      options:
+        - Geschäftsführung
+        - Support / Helpdesk
+        - Team-intern
+        - Kunde
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution-idea
+    attributes:
+      label: Lösungsidee / Richtung
+      description: Eine erste Hypothese, wohin die Lösung gehen könnte – KEIN fertiger Bauplan. Hält die Richtung offen für das Team.
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-criteria
+    attributes:
+      label: Erwarteter Nutzen / Erfolgskriterium
+      description: Woran merken wir, dass dieses Epic erfolgreich war? (Hilft bei der GF-Kommunikation und beim späteren Review.)
+      placeholder: Vereine sparen pro Turnier spürbar Zeit; Spielpläne sind ohne Nachfragen zugänglich.
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Weiterer Kontext (optional)
+      description: Verwandte Epics, Hintergrundinfos, Links. Bilder direkt per Strg+V einfügen.
+    validations:
+      required: false
