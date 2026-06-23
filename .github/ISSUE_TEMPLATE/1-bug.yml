@@ -44,8 +44,8 @@ body:
     id: environment
     attributes:
       label: Umgebung / Version
-      description: Wo ist der Fehler aufgetreten? (z. B. Stage, Server, Tool-Version, Build-Nummer)
-      placeholder: z. B. Live-System, Tool-Version 2.4.1
+      description: Wo ist der Fehler aufgetreten? (z. B. Server, Version, Build-Nummer)
+      placeholder: z. B. Moss Live-System, Version 2.4.1
     validations:
       required: false
 

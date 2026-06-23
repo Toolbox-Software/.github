@@ -3,8 +3,3 @@
 # erzwingt die Nutzung der Templates. Nutzer mit Schreibrechten sehen die
 # Blank-Option weiterhin als "Maintainers only".
 blank_issues_enabled: false
-
-contact_links:
-  - name: 💬 Frage oder Diskussion
-    url: https://github.com/orgs/DEINE-ORG/discussions
-    about: Für allgemeine Fragen, Ideen oder Support bitte die Discussions nutzen statt ein Issue zu öffnen.

@@ -14,7 +14,7 @@ body:
     attributes:
       label: User Story
       description: Wer möchte was und warum? Bitte im Format „Als <Rolle> möchte ich <Ziel>, um <Nutzen>".
-      placeholder: Als Turnierleiter möchte ich Spielpläne als PDF exportieren, um sie offline aushängen zu können.
+      placeholder: Als Versandleiter möchte ich Tourenpläne als PDF exportieren, um sie den Fahrern vorab zukommen lassen zu können.
     validations:
       required: true
 
